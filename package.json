@@ -1,7 +1,7 @@
 {
-    "name": "pm2-helper2",
-    "version": "0.0.1",
-    "description": "pm2-helper2",
+    "name": "pm2-helper",
+    "version": "0.0.3",
+    "description": "pm2-helper",
     "main": "build/index.js",
     "scripts": {
         "start:build": "npm run tsc && node build",
@@ -13,7 +13,10 @@
         "p": "npm run tsc && npm publish",
         "lint": "tslint \"src/**/*.ts\""
     },
-    "dependencies": {"tslib": "^1.6.1"},
+    "dependencies": {
+        "pm2": "^2.5.0",
+        "tslib": "^1.6.1"
+    },
     "devDependencies": {
         "@types/mocha": "^2.2.41",
         "@types/node": "^6.0.48",
@@ -25,9 +28,9 @@
         "tslint": "^5.1.0",
         "typescript": "^2.3.2"
     },
-    "keywords": ["typescript", "pm2-helper2"],
+    "keywords": ["typescript", "pm2-helper"],
     "author": "hubiqing",
-    "repository": "https://github.com/githbq/hbq-module-boilerplate.git",
+    "repository": "https://github.com/githbq/hbq-pm2-helper.git",
     "engines": {"node": ">=7.6"},
     "license": "MIT"
 }
